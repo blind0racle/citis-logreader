@@ -1,0 +1,212 @@
+V	200922112524Z		01	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=dev-vpn.citis.ru/name=server/emailAddress=dab@citis.ru
+R	200922112922Z	200903115809Z	02	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=anosov/name=server/emailAddress=anosov@inevm.ru
+R	200922113027Z	200916093918Z	03	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ponteleev/name=server/emailAddress=ponteleev@ursgis.ru
+R	200922113117Z	200916094041Z	04	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=sokolov/name=server/emailAddress=sokolov@inevm.ru
+R	200922113220Z	200916094008Z	05	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=sokolin/name=server/emailAddress=sokolin@ursgis.ru
+R	200922113308Z	200916094131Z	06	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=yashin/name=server/emailAddress=yashin@ursgis.ru
+R	200922113414Z	200916093712Z	07	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=chikina/name=server/emailAddress=chikina@inevm.ru
+R	200922113500Z	200916093823Z	08	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ponomarev/name=server/emailAddress=p.ponomarev@ursgis.ru
+R	200922113552Z	200916094206Z	09	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=zubritskiy/name=server/emailAddress=zubritskiy@inevm.ru
+R	210318133026Z	210317110802Z	0A	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kashtanov/name=server/emailAddress=dab@citis.ru
+R	210327125352Z	210317110823Z	0B	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ozerov/name=server/emailAddress=dab@citis.ru
+R	210327125420Z	210317110831Z	0C	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kemler/name=server/emailAddress=dab@citis.ru
+R	210327125500Z	210317110841Z	0D	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=pivovarov/name=server/emailAddress=dab@citis.ru
+R	210327135925Z	210317110848Z	0E	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kozik/name=server/emailAddress=dab@citis.ru
+R	210327135946Z	210317110854Z	0F	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=chekir/name=server/emailAddress=dab@citis.ru
+R	210328133414Z	210317110905Z	10	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kirpichnikova/name=server/emailAddress=dab@citis.ru
+R	210331134224Z	210317110916Z	11	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=romanova/name=server/emailAddress=dab@citis.ru
+R	210331134245Z	210317110925Z	12	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=fedulov/name=server/emailAddress=dab@citis.ru
+R	210331134306Z	210317110933Z	13	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ermolenkov/name=server/emailAddress=dab@citis.ru
+R	210331134338Z	210317110943Z	14	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kuznetsova/name=server/emailAddress=dab@citis.ru
+R	210331134400Z	210317110957Z	15	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=mordacheva/name=server/emailAddress=dab@citis.ru
+R	210331134432Z	210317111009Z	16	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=solyanikova/name=server/emailAddress=dab@citis.ru
+R	210331134454Z	210317111018Z	17	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=tokareva/name=server/emailAddress=dab@citis.ru
+R	210331134717Z	210317111028Z	18	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=tiurina/name=server/emailAddress=dab@citis.ru
+R	210331134814Z	210317111042Z	19	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=churkina/name=server/emailAddress=dab@citis.ru
+R	210331134842Z	210317111051Z	1A	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ushakov/name=server/emailAddress=dab@citis.ru
+R	210331134919Z	210317111100Z	1B	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=khoptyan/name=server/emailAddress=dab@citis.ru
+R	210604092204Z	210604104456Z	1C	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=butianova/name=server/emailAddress=support@inevm.ru
+R	210825173258Z	210826112548Z	1D	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=globchansky/name=server/emailAddress=globchansky@citis.ru
+R	210903115900Z	210826112559Z	1E	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=anosov/name=server/emailAddress=anosov@inevm.ru
+R	210916093749Z	210826112609Z	1F	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=chikina/name=server/emailAddress=chikina@inevm.ru
+R	210916093851Z	210826112624Z	20	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ponomarev/name=server/emailAddress=ponomarev@inevm.ru
+R	210916093943Z	210826112634Z	21	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ponteleev/name=server/emailAddress=ponteleev@citis.ru
+R	210916094032Z	210826112642Z	22	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=sokolin/name=server/emailAddress=sokolin@citis.ru
+R	210916094105Z	210826112646Z	23	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=sokolov/name=server/emailAddress=sokolov@citis.ru
+R	210916094154Z	210826112652Z	24	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=yashin/name=server/emailAddress=yashin@citis.ru
+R	210916094244Z	210826112710Z	25	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=zubritskiy/name=server/emailAddress=zubritskiy@citis.ru
+R	210922124749Z	210826112719Z	26	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=server/name=server/emailAddress=dab@citis.ru
+R	211005092820Z	220315140053Z	27	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=pankova/name=server/emailAddress=dab@citis.ru
+R	220302130004Z	220303175042Z	28	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kuznetsov/name=server/emailAddress=dab@citis.ru
+R	220304104623Z	220304143839Z	29	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=manzhula/name=server/emailAddress=dab@citis.ru
+R	220310102939Z	220304143850Z	2A	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=aleksandrova/name=server/emailAddress=dab@citis.ru
+R	220317111154Z	220304143859Z	2B	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kashtanov/name=server/emailAddress=kashtanov@citis.ru
+R	220317111231Z	220304143906Z	2C	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ozerov/name=server/emailAddress=ozerov@inevm.ru
+R	220317111259Z	220304143916Z	2D	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kemler/name=server/emailAddress=kemler@citis.ru
+R	220317111349Z	220304143925Z	2E	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=pivovarov/name=server/emailAddress=pivovarov@citis.ru
+R	220317111415Z	220304143934Z	2F	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kozik/name=server/emailAddress=kozik@citis.ru
+R	220317111501Z	220304143940Z	30	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=chekir/name=server/emailAddress=chakir@inevm.ru
+R	220317111526Z	220304143952Z	31	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kirpichnikova/name=server/emailAddress=dab@citis.ru
+R	220317111549Z	220304144014Z	32	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=romanova/name=server/emailAddress=dab@citis.ru
+R	220317111611Z	211001103823Z	33	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=fedulov/name=server/emailAddress=dab@citis.ru
+R	220317111630Z	220304144022Z	34	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ermolenkov/name=server/emailAddress=dab@citis.ru
+R	220317111700Z	220304144033Z	35	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kuznetsova/name=server/emailAddress=dab@citis.ru
+R	220317111723Z	220304144040Z	36	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=mordacheva/name=server/emailAddress=dab@citis.ru
+R	220317111745Z	220304144047Z	37	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=solyanikova/name=server/emailAddress=dab@citis.ru
+R	220317111808Z	220304171945Z	38	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=tokareva/name=server/emailAddress=dab@citis.ru
+R	220317111837Z	220304171954Z	39	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=tiurina/name=server/emailAddress=dab@citis.ru
+R	220317111857Z	220304172004Z	3A	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=churkina/name=server/emailAddress=dab@citis.ru
+R	220317111920Z	220304172023Z	3B	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ushakov/name=server/emailAddress=dab@citis.ru
+R	220317111948Z	220304172032Z	3C	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=khoptyan/name=server/emailAddress=dab@citis.ru
+R	220517124829Z	230331094438Z	3D	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=sadovnikov/name=server/emailAddress=sadovnikov@citis.ru
+V	220604104536Z		3E	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=butianova/name=server/emailAddress=butianova@citis.ru
+R	220624101958Z	220714082404Z	3F	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=drozdov/name=server/emailAddress=dab@citis.ru
+R	220813103445Z	220818090128Z	40	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=chebotkov/name=server/emailAddress=chebotkov_kv@citis.ru
+R	220817104750Z	220823115844Z	41	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kapelkina/name=server/emailAddress=kapelkina_sm@citis.ru
+R	220826112808Z	220823120000Z	42	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=globchansky/name=server/emailAddress=dab@citis.ru
+R	220826112836Z	220823120017Z	43	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=anosov/name=server/emailAddress=anosov@inevm.ru
+R	220826112906Z	220823120042Z	44	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ponomarev/name=server/emailAddress=dab@citis.ru
+R	220826113054Z	220823120059Z	45	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ponteleev/name=server/emailAddress=dab@citis.ru
+R	220826113120Z	220823120119Z	46	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=sokolin/name=server/emailAddress=dab@citis.ru
+R	220826113155Z	220823120141Z	47	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=zubritskiy/name=server/emailAddress=dab@citis.ru
+R	220826113346Z	220823121301Z	48	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=server/name=server/emailAddress=dab@citis.ru
+R	220830115624Z	220823120200Z	49	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=chernov_ie/name=server/emailAddress=chernov_ie@citis.ru
+R	221006112443Z	211015110555Z	4A	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=rianov/name=server/emailAddress=dab@citis.ru
+R	221006112521Z	221024104112Z	4B	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=rumyanceva/name=server/emailAddress=dab@citis.ru
+R	221006112542Z	221220135104Z	4C	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=plankina/name=server/emailAddress=dab@citis.ru
+R	221115093103Z	211115093117Z	4D	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=test-crl/name=server/emailAddress=dab@citis.ru
+R	221228121936Z	230109142042Z	4E	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=gusev/name=server/emailAddress=dab@citis.ru
+V	230121112428Z		4F	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=isaev/name=server/emailAddress=support@inevm.ru
+R	230124112510Z	230201124020Z	50	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=chukhnov/name=server/emailAddress=support@inevm.ru
+R	230214142047Z	230110133222Z	51	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=isaev/name=server/emailAddress=dab@citis.ru
+V	230216145110Z		52	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=matlashova/name=server/emailAddress=support@inevm.ru
+R	230303175117Z	230228140555Z	53	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kuznetsov/name=server/emailAddress=dab@citis.ru
+R	230304172129Z	230228140601Z	54	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=manzhula/name=server/emailAddress=dab@citis.ru
+R	230304172201Z	230228140613Z	55	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=aleksandrova/name=server/emailAddress=dab@citis.ru
+R	230304172236Z	230228140618Z	56	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kashtanov/name=server/emailAddress=dab@citis.ru
+R	230304172259Z	230228140624Z	57	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ozerov/name=server/emailAddress=dab@citis.ru
+R	230304172325Z	230228140630Z	58	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kemler/name=server/emailAddress=dab@citis.ru
+R	230304172412Z	230228140637Z	59	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=pivovarov/name=server/emailAddress=dab@citis.ru
+R	230304172433Z	230228120255Z	5A	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kozik/name=server/emailAddress=dab@citis.ru
+R	230304172452Z	230228140643Z	5B	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=chekir/name=server/emailAddress=dab@citis.ru
+R	230304172517Z	230228120307Z	5C	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kirpichnikova/name=server/emailAddress=dab@citis.ru
+R	230304172539Z	230228140649Z	5D	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=romanova/name=server/emailAddress=dab@citis.ru
+R	230304172604Z	230228140658Z	5E	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kuznetsova/name=server/emailAddress=dab@citis.ru
+R	230304172654Z	230228120316Z	5F	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=mordacheva/name=server/emailAddress=dab@citis.ru
+R	230304172724Z	230228120325Z	60	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=solyanikova/name=server/emailAddress=dab@citis.ru
+R	230304172745Z	230228120333Z	61	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=tokareva/name=server/emailAddress=dab@citis.ru
+R	230304172802Z	230228140707Z	62	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=tiurina/name=server/emailAddress=dab@citis.ru
+R	230304172838Z	230228120345Z	63	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ushakov/name=server/emailAddress=dab@citis.ru
+R	230304172924Z	230228120354Z	64	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=khoptyan/name=server/emailAddress=dab@citis.ru
+R	230315140117Z	230228120400Z	65	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=pankova/name=server/emailAddress=dab@citis.ru
+R	230316140550Z	220602115254Z	66	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=pankratova/name=server/emailAddress=dab@citis.ru
+R	230316140609Z	230228140714Z	67	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=larionov/name=server/emailAddress=dab@citis.ru
+R	230316140633Z	230228140721Z	68	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=gliko/name=server/emailAddress=dab@citis.ru
+R	230321154026Z	230418123330Z	69	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=tsutskova/name=server/emailAddress=dab@citis.ru
+R	230420121435Z	230228120415Z	6E	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=mancheva/name=server/emailAddress=dab@citis.ru
+R	230420121455Z	230228120424Z	6F	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ermoshina/name=server/emailAddress=dab@citis.ru
+R	230420121513Z	230228120432Z	70	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=gulenkov/name=server/emailAddress=dab@citis.ru
+R	230620102931Z	230620143924Z	71	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=voronin/name=server/emailAddress=dab@citis.ru
+R	230714082421Z	240119110042Z	72	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=drozdov/name=server/emailAddress=dab@citis.ru
+R	230818090148Z	230817135148Z	73	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=chebotkov/name=server/emailAddress=dab@citis.ru
+R	230818115202Z	230817135155Z	74	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=fursik/name=server/emailAddress=dab@citis.ru
+R	230823115923Z	230817135203Z	75	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kapelkina/name=server/emailAddress=dab@citis.ru
+R	230823120242Z	230817135220Z	76	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=globchansky/name=server/emailAddress=dab@citis.ru
+R	230823120315Z	230817104856Z	77	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=anosov/name=server/emailAddress=dab@citis.ru
+R	230823120339Z	230815120316Z	78	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ponomarev/name=server/emailAddress=dab@citis.ru
+R	230823120439Z	230817135227Z	79	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=sokolin/name=server/emailAddress=dab@citis.ru
+R	230823120526Z	230817135239Z	7A	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=zubritskiy/name=server/emailAddress=dab@citis.ru
+R	230823120645Z	230817135246Z	7B	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=panteleev/name=server/emailAddress=dab@citis.ru
+R	230823121345Z	230817104939Z	7C	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=server/name=server/emailAddress=dab@citis.ru
+R	230906141714Z	230928114647Z	7D	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=pletnev/name=server/emailAddress=dab@citis.ru
+R	231024104209Z	230418122857Z	7E	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=rumyanceva/name=server/emailAddress=dab@citis.ru
+R	231108104230Z	231110121912Z	7F	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=solovev/name=server/emailAddress=viktor.vladimirovich.solovev@gmail.com
+R	231110113939Z	230614112921Z	80	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=motina/name=server/emailAddress=dab@citis.ru
+R	231114121834Z	231129111347Z	81	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=vedeneeva/name=server/emailAddress=dab@citis.ru
+R	231122195351Z	240222102049Z	82	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=morozova/name=server/emailAddress=dab@citis.ru
+R	231124110003Z	231129111358Z	83	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=haritonov/name=server/emailAddress=dab@citis.ru
+R	231220135126Z	240206100012Z	84	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=plankina/name=server/emailAddress=dab@citis.ru
+R	240109142109Z	240112091158Z	85	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=gusev/name=server/emailAddress=dab@citis.ru
+R	240110133234Z	240115105638Z	86	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=isaev/name=server/emailAddress=dab@citis.ru
+R	240228120455Z	240222102256Z	87	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kozik/name=server/emailAddress=dab@citis.ru
+R	240228120520Z	240222102453Z	88	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kirpichnikova/name=server/emailAddress=dab@citis.ru
+R	240228120541Z	240222102557Z	89	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=mordacheva/name=server/emailAddress=dab@citis.ru
+R	240228120603Z	240222102729Z	8A	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=solyanikova/name=server/emailAddress=dab@citis.ru
+R	240228120621Z	240222102912Z	8B	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=tokareva/name=server/emailAddress=dab@citis.ru
+R	240228120643Z	240222103007Z	8C	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ushakov/name=server/emailAddress=dab@citis.ru
+R	240228120707Z	240222103110Z	8D	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=khoptyan/name=server/emailAddress=dab@citis.ru
+R	240228120728Z	240222103244Z	8E	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=pankova/name=server/emailAddress=dab@citis.ru
+R	240228120755Z	230419153720Z	8F	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=mancheva/name=server/emailAddress=dab@citis.ru
+R	240228120816Z	240222103359Z	90	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ermoshina/name=server/emailAddress=dab@citis.ru
+R	240228120838Z	230802131451Z	91	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=gulenkov/name=server/emailAddress=dab@citis.ru
+R	240228140748Z	240222104655Z	93	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kuznetsov/name=server/emailAddress=dab@citis.ru
+R	240228140807Z	240115120300Z	94	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=manzhula/name=server/emailAddress=dab@citis.ru
+R	240228140833Z	240222104828Z	95	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=aleksandrova/name=server/emailAddress=dab@citis.ru
+R	240228140850Z	240222105238Z	96	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kashtanov/name=server/emailAddress=dab@citis.ru
+R	240228140909Z	240222105335Z	97	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ozerov/name=server/emailAddress=dab@citis.ru
+R	240228140924Z	240222105450Z	98	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kemler/name=server/emailAddress=dab@citis.ru
+R	240228140948Z	240222105551Z	99	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=pivovarov/name=server/emailAddress=dab@citis.ru
+R	240228141004Z	240222105640Z	9A	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=chekir/name=server/emailAddress=dab@citis.ru
+R	240228141021Z	240222105800Z	9B	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=romanova/name=server/emailAddress=dab@citis.ru
+R	240228141043Z	240222105853Z	9C	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kuznetsova/name=server/emailAddress=dab@citis.ru
+R	240228141106Z	240222110006Z	9D	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=tiurina/name=server/emailAddress=dab@citis.ru
+R	240228142016Z	231026101554Z	9E	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=larionov/name=server/emailAddress=dab@citis.ru
+R	240228142031Z	230822095350Z	9F	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=gliko/name=server/emailAddress=dab@citis.ru
+R	240330094915Z	230929132109Z	A0	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=zhilchikov/name=server/emailAddress=alexey@zhilchikov.ru
+R	240418153742Z	240222110238Z	A1	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=machneva/name=server/emailAddress=dab@citis.ru
+V	240501112838Z		A2	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=maltsev/name=server/emailAddress=dab@citis.ru
+V	240521133326Z		A3	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=minaeva/name=server/emailAddress=dab@citis.ru
+V	240619143941Z		A4	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=voronin/name=server/emailAddress=dab@citis.ru
+R	240723102326Z	230929132101Z	A5	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=oshroev/name=server/emailAddress=dab@citis.ru
+V	240801131509Z		A6	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=gulenkov/name=server/emailAddress=dab@citis.ru
+V	240814120342Z		A7	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ponomarev/name=server/emailAddress=dab@citis.ru
+V	240816104911Z		A8	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=anosov/name=server/emailAddress=dab@citis.ru
+V	240816105010Z		A9	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=server/name=server/emailAddress=dab@citis.ru
+V	240816135312Z		AA	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=chebotkov/name=server/emailAddress=dab@citis.ru
+V	240816135328Z		AB	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=fursik/name=server/emailAddress=dab@citis.ru
+R	240816135348Z	231002141634Z	AC	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kapelkina/name=server/emailAddress=dab@citis.ru
+V	240816135411Z		AD	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=globchansky/name=server/emailAddress=dab@citis.ru
+V	240816135435Z		AE	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=sokolin/name=server/emailAddress=dab@citis.ru
+V	240816135505Z		AF	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=zubritskiy/name=server/emailAddress=dab@citis.ru
+V	240816135527Z		B0	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=panteleev/name=server/emailAddress=dab@citis.ru
+R	240821095411Z	240226132327Z	B1	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=gliko/name=server/emailAddress=dab@citis.ru
+V	240927114713Z		B2	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=pletnev/name=server/emailAddress=dab@citis.ru
+V	241001141831Z		B3	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kapelkina/name=server/emailAddress=dab@citis.ru
+V	241005115842Z		B4	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=suprun/name=server/emailAddress=dab@citis.ru
+V	241025101604Z		B5	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=larionov/name=server/emailAddress=dab@citis.ru
+V	241025101630Z		B6	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=erokhin/name=server/emailAddress=dab@citis.ru
+V	241109121938Z		B7	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=solovev/name=server/emailAddress=dab@citis.ru
+V	241128111424Z		B8	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=vedeneeva/name=server/emailAddress=dab@citis.ru
+V	241128111444Z		B9	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=haritonov/name=server/emailAddress=dab@citis.ru
+V	241128150126Z		BA	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=sergeenko/name=server/emailAddress=dab@citis.ru
+V	241128150142Z		BB	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=polunin/name=server/emailAddress=dab@citis.ru
+V	250111091218Z		BC	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=gusev/name=server/emailAddress=dab@citis.ru
+V	250114105654Z		BD	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=isaev/name=server/emailAddress=dab@citis.ru
+V	250114120313Z		BE	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=duiun/name=server/emailAddress=dab@citis.ru
+V	250118111001Z		BF	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kozlov/name=server/emailAddress=dab@citis.ru
+V	250205100028Z		C0	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=plankina/name=server/emailAddress=dab@citis.ru
+V	250221102109Z		C1	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=morozova/name=server/emailAddress=dab@citis.ru
+V	250221102312Z		C2	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kozik/name=server/emailAddress=dab@citis.ru
+V	250221102504Z		C3	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kirpichnikova/name=server/emailAddress=dab@citis.ru
+V	250221102611Z		C4	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=mordacheva/name=server/emailAddress=dab@citis.ru
+V	250221102743Z		C5	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=solyanikova/name=server/emailAddress=dab@citis.ru
+V	250221102923Z		C6	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=tokareva/name=server/emailAddress=dab@citis.ru
+V	250221103022Z		C7	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ushakov/name=server/emailAddress=dab@citis.ru
+V	250221103121Z		C8	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=khoptyan/name=server/emailAddress=dab@citis.ru
+V	250221103255Z		C9	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=pankova/name=server/emailAddress=dab@citis.ru
+V	250221103413Z		CA	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ermoshina/name=server/emailAddress=dab@citis.ru
+R	250221104539Z	240222104548Z	CB	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kuprianov/name=server/emailAddress=dab@citis.ru
+V	250221104600Z		CC	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kuprianov/name=server/emailAddress=dab@citis.ru
+V	250221104708Z		CD	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kuznetsov/name=server/emailAddress=dab@citis.ru
+V	250221104842Z		CE	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=aleksandrova/name=server/emailAddress=dab@citis.ru
+V	250221105249Z		CF	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kashtanov/name=server/emailAddress=dab@citis.ru
+V	250221105346Z		D0	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=ozerov/name=server/emailAddress=dab@citis.ru
+V	250221105505Z		D1	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kemler/name=server/emailAddress=dab@citis.ru
+V	250221105600Z		D2	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=pivovarov/name=server/emailAddress=dab@citis.ru
+V	250221105651Z		D3	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=chekir/name=server/emailAddress=dab@citis.ru
+V	250221105812Z		D4	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=romanova/name=server/emailAddress=dab@citis.ru
+V	250221105903Z		D5	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=kuznetsova/name=server/emailAddress=dab@citis.ru
+V	250221110015Z		D6	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=tiurina/name=server/emailAddress=dab@citis.ru
+R	250221110140Z	240222110255Z	D7	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=mancheva/name=server/emailAddress=dab@citis.ru
+V	250221110248Z		D8	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=machneva/name=server/emailAddress=dab@citis.ru
+V	250227095704Z		D9	unknown	/C=RU/ST=Moscow/L=Moscow/O=CITIS/OU=Support/CN=zhilchikov/name=server/emailAddress=dab@citis.ru
