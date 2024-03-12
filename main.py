@@ -27,6 +27,6 @@ with open("demo.txt", "r") as file:
             print(f"Status: {status}, First date: {date1}, Second date: {date2}, CN: {cn}, Email: {email}")
             break
     else:
-        print("Line number n  ot found in the log file.")
+        print("Line number not found in the log file.")
 
 
