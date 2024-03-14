@@ -1,98 +1,57 @@
-import customtkinter as ctk
-from tkinter import filedialog
 import tkinter as tk
-import plotly.graph_objects as go
-import webbrowser
-import tempfile
-import os
-from main import reader
+from tkinter import Canvas, Entry, Frame, END
+import customtkinter as ctk  # Ensure customtkinter is installed and imported
 
-ctk.set_appearance_mode("Light")  # Set the overall appearance/theme
-ctk.set_default_color_theme("blue")  # Set the default color theme
+ctk.set_appearance_mode("Light")
 
 
-# Function to browse for files
-def browse_files():
-    filename = filedialog.askopenfilename()
-    searchbar.delete(0, ctk.END)
-    searchbar.insert(0, filename)
+class CustomTkinterTable:
+    def __init__(self, root, data, width=600, height=300, border_color='light slate gray', border_thickness=2):
+        # Define dimensions for the inner frame, reducing size based on border thickness
+        inner_width = width - border_thickness * 1
+        inner_height = height + border_thickness*6
+
+        # Outer frame acting as the border
+        self.outer_frame = ctk.CTkFrame(root, width=width, height=height, fg_color=border_color)
+        self.outer_frame.pack(pady=20, padx=20)  # Add padx to ensure the border is visible all around
+
+        # Inner 'frame' for the content
+        self.frame = ctk.CTkFrame(self.outer_frame, width=inner_width, height=inner_height)
+        self.frame.place(x=border_thickness, y=border_thickness)  # Adjust placement to simulate border
+
+        self.canvas = Canvas(self.frame, width=inner_width - 20, height=inner_height - 20,)
+        self.scrollbar = ctk.CTkScrollbar(self.frame, orientation="vertical")
+
+        self.canvas.configure(yscrollcommand=self.scrollbar.set)
+        self.scrollbar.configure(command=self.canvas.yview)
+
+        self.scrollable_frame = Frame(self.canvas,)
+
+        self.scrollable_frame.bind(
+            "<Configure>",
+            lambda e: self.canvas.configure(scrollregion=self.canvas.bbox("all"))
+        )
+
+        self.canvas.create_window((0, 0), window=self.scrollable_frame, anchor="nw")
+
+        self.canvas.pack(side="left", fill="both", expand=True)
+        self.scrollbar.pack(side="right", fill="y")
+
+        # Bind mousewheel event to the canvas for scrolling
+        self.canvas.bind("<MouseWheel>", self.on_mousewheel)
+
+        self.build_table(data)
 
 
-# Function to open and display the content of the selected file
-def open_file():
-    filepath = searchbar.get()
-    linenum = 0
-    try:
-        with open(filepath, 'r') as file_content:
-            # Preparing headers
-            formatted_content = "{:<10}{:<20}{:<20}{:<30}{:<50}\n".format("Status", "First Date", "Second Date", "Name",
-                                                                          "Email")
-
-            for line in file_content:
-                linenum += 1
-                status, first_date, second_date, name, email = reader(linenum, filepath)
-
-                formatted_line = "{:<10}{:<20}{:<20}{:<30}{:<50}".format(
-                    status,
-                    first_date,
-                    second_date,
-                    name,
-                    email
-                )
-                formatted_content += formatted_line + "\n"
-
-            # Displaying the formatted content in CTkTextbox
-            log_text_widget.delete("0.0", tk.END)
-            log_text_widget.insert("0.0", formatted_content)
-
-    except Exception as e:
-        log_text_widget.delete("0.0", tk.END)
-        log_text_widget.insert("0.0", f"Error opening file: {str(e)}")
 
 
-# Function to show a Plotly chart in the default web browser
-def show_plotly_chart():
-    fig = go.Figure(data=[go.Table(
-        header=dict(values=['A Scores', 'B Scores'],
-                    line_color='darkslategray',
-                    fill_color='lightskyblue',
-                    align='left'),
-        cells=dict(values=[[100, 90, 80, 90],  # 1st column
-                           [95, 85, 75, 95]],  # 2nd column
-                   line_color='darkslategray',
-                   fill_color='lightcyan',
-                   align='left'))
-    ])
+if __name__ == "__main__":  # Corrected to __name__
+    root = ctk.CTk()
+    root.title("CustomTkinter Table with Scrollbar")
+    root.geometry("800x600")
 
-    fig.update_layout(width=500, height=300)
+    data = [["Row %d, Column %d" % (i, j) for j in range(5)] for i in range(50)]
 
-    # Save the figure as a temporary HTML file and open it in the default web browser
-    temp = tempfile.NamedTemporaryFile(delete=False, suffix=".html")
-    fig.write_html(temp.name)
-    webbrowser.open('file://' + os.path.realpath(temp.name))
+    table = CustomTkinterTable(root, data, width=700, height=400)
 
-
-# Initialize the main window with customtkinter
-window = ctk.CTk()
-window.title("LogReader by blindoracle")
-window.geometry("900x630")
-window.resizable(False, False)
-
-# GUI elements
-searchbar = ctk.CTkEntry(window, width=520)
-searchbar.grid(row=0, column=0, padx=10, pady=20)
-
-browse_btn = ctk.CTkButton(window, text="Browse Files", command=browse_files)
-browse_btn.grid(row=0, column=1, padx=5, pady=10)
-
-open_btn = ctk.CTkButton(window, text="Open", command=open_file)
-open_btn.grid(row=0, column=2, padx=5, pady=10)
-
-show_chart_btn = ctk.CTkButton(window, text="Show Chart", command=show_plotly_chart)
-show_chart_btn.grid(row=0, column=3, padx=5, pady=10)
-
-# Replace the Text widget with CTkTextbox for log display
-log_text_widget = ctk.CTkTextbox(window, width=860, height=510)
-log_text_widget.grid(row=1, column=0, columnspan=4, padx=20, pady=0)
-
-window.mainloop()
+    root.mainloop()
