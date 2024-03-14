@@ -1,0 +1,10 @@
+
+[2024-03-14 08:54:56] Traceback (most recent call last):
+  File "C:\Users\thes1\PycharmProjects\citis-logreader\feef.py", line 54, in <module>
+    main()
+  File "C:\Users\thes1\PycharmProjects\citis-logreader\feef.py", line 50, in main
+    root.mainloop()
+  File "C:\Users\thes1\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 1422, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+
