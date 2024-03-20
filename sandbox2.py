@@ -4,7 +4,7 @@ import tkinter as tk
 from main import reader
 from tabulate import tabulate
 
-
+original_content = []
 ctk.set_appearance_mode("Light")
 ctk.set_default_color_theme("blue")
 
@@ -16,38 +16,59 @@ def browse_files():
 
 
 def open_file():
+    global original_content  # Ensures we are modifying the global variable
     filepath = searchbar.get()
     linenum=0
+    data=[]  # Clear previous data if any from the global list
     try:
         with open(filepath, 'r') as file_content:
-            # Preparing headers
-            col_names = ["     Status    ", "          First Date          ", "              Second Date             ", "         Name        ", "      Email      "]
+            col_names = ["     Status    ", "          First Date          ", "              Second Date             ", "         Name        "]
             for line in file_content:
-                    linenum+=1
-                    status, first_date, second_date, name, email = reader(linenum,filepath)
-                    data.append([status, first_date, second_date, name, email])
+                linenum += 1
+                status, first_date, second_date, name = reader(linenum, filepath)
+                data.append([status, first_date, second_date, name])
 
-                            # Displaying the formatted content
             log_text_widget.delete("0.0", tk.END)
-            log_text_widget.insert("0.0", (tabulate(data, headers=col_names, tablefmt="pipes")))
-
+            formatted_content = tabulate(data, headers=col_names, tablefmt="pipes")
+            log_text_widget.insert("0.0", formatted_content)
+            original_content = data[:]  # Make a copy of the data for filtering purposes
     except Exception as e:
         log_text_widget.delete("0.0", tk.END)
         log_text_widget.insert("0.0", f"Error opening file: {str(e)}")
 
 
 def filter_content():
-    search_term = search_filter_entry.get()
-    all_content = log_text_widget.get("1.0", tk.END)
-    filtered_content = ""
+    filter_text = search_filter_entry.get()
+    inclusion_filters = []
+    exclusion_filters = []
 
-    for line in all_content.split("\n"):
-        if search_term.lower() in line.lower():
-            filtered_content += line + "\n"
+    # Splitting based on space to get all filters
+    filters = filter_text.split()
+
+    for f in filters:
+        if f.startswith('+'):
+            inclusion_filters.append(f[1:].lower())  # Include terms without '+'
+        elif f.startswith('-'):
+            exclusion_filters.append(f[1:].lower())  # Exclude terms without '-'
+
+    filtered_data = []
+
+    for row in original_content:
+        row_text = ' '.join(map(str, row)).lower() # Convert row data to a single lowercase string for comparison
+        # Apply inclusion filters if specified, else consider the row
+        if all(f in row_text for f in inclusion_filters):
+            # Exclude rows that contain any exclusion filter terms
+            if not any(f in row_text for f in exclusion_filters):
+                filtered_data.append(row)
 
     # Displaying the filtered content
-    log_text_widget.delete("1.0", tk.END)
-    log_text_widget.insert("1.0", filtered_content)
+    col_names = ["     Status    ", "          First Date          ", "              Second Date             ", "         Name        "]
+    log_text_widget.delete("0.0", tk.END)
+    if filtered_data:
+        formatted_content = tabulate(filtered_data, headers=col_names, tablefmt="pipes")
+        log_text_widget.insert("0.0", formatted_content)
+    else:
+        log_text_widget.insert("0.0", "No matches found.")
 
 
 

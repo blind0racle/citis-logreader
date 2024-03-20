@@ -14,11 +14,9 @@ def reader(line_number,path):
                     # Extract the required information if there are enough elements
                     date2 = date_beautifier(parts[2][:-1])
                     cn = parts[5].split("=")[6].split("/")[0]
-                    email = parts[5].split("=")[8]
                 else:
-                    date2 = "NS"
+                    date2 = "not-stated"
                     cn = parts[4].split("=")[6].split("/")[0]
-                    email = parts[4].split("=")[8]
-                return status, date1, date2, cn, email
+                return status, date1, date2, cn
         else:
             print("Line number not found in the log file.")
