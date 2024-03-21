@@ -1,22 +1,7 @@
-from dbfyer import date_beautifier
-def reader(line_number,path):
-    with open(path, "r") as file:
-        # Read the file line by line
-        for index, line in enumerate(file, start=1):
-            if index == line_number:
-                # Split the line into parts based on spaces
-                parts = line.split()
+import customtkinter as ctk
+from interface import setup_interface
 
-                # Check if there are enough elements in the parts list
-                status = "verified" if parts[0] == "V" else "revoked"
-                date1 = date_beautifier(parts[1][:-1])
-                if len(parts) == 6:
-                    # Extract the required information if there are enough elements
-                    date2 = date_beautifier(parts[2][:-1])
-                    cn = parts[5].split("=")[6].split("/")[0]
-                else:
-                    date2 = "not-stated"
-                    cn = parts[4].split("=")[6].split("/")[0]
-                return status, date1, date2, cn
-        else:
-            print("Line number not found in the log file.")
+if __name__ == "__main__":
+    app = ctk.CTk()
+    setup_interface(app)
+    app.mainloop()

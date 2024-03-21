@@ -1,21 +1,58 @@
 import customtkinter as ctk
 from tkinter import filedialog
 import tkinter as tk
-from main import reader
 from tabulate import tabulate
-
-original_content = []
-ctk.set_appearance_mode("Light")
-ctk.set_default_color_theme("blue")
+from interface import *
 
 data=[]
-def browse_files():
+original_content = []
+def date_beautifier(input_string):
+
+    pairs = [input_string[i:i+2] for i in range(0, len(input_string), 2)]
+    numbers = [pair.zfill(2) for pair in pairs]
+
+    num_3 = numbers[3]
+    num_4 = numbers[4]
+    num_5 = numbers[5]
+    num_2 = numbers[2]
+    num_1 = numbers[1]
+    num_0 = '20' + numbers[0]
+
+    # Format the numbers into the desired string format
+    formatted_string = f"{num_3}:{num_4}:{num_5} {num_2}/{num_1}/{num_0}"
+
+    # Print the formatted string
+    return formatted_string
+
+def reader(line_number,path):
+    with open(path, "r") as file:
+        # Read the file line by line
+        for index, line in enumerate(file, start=1):
+            if index == line_number:
+                parts = line.split()
+
+                status = "verified" if parts[0] == "V" else "revoked"
+                date1 = date_beautifier(parts[1][:-1])
+                if len(parts) == 6:
+                    date2 = date_beautifier(parts[2][:-1])
+                    cn = parts[5].split("=")[6].split("/")[0]
+                else:
+                    date2 = "not-stated"
+                    cn = parts[4].split("=")[6].split("/")[0]
+                return status, date1, date2, cn
+        else:
+            print("Line number not found in the log file.")
+
+def browse_files(searchbar, log_text_widget):
+
     filename = filedialog.askopenfilename()
     searchbar.delete(0, ctk.END)
     searchbar.insert(0, filename)
+    open_file(searchbar, log_text_widget)
 
 
-def open_file():
+def open_file(searchbar, log_text_widget):
+    filepath = searchbar.get()
     global original_content  # Ensures we are modifying the global variable
     filepath = searchbar.get()
     linenum=0
@@ -37,12 +74,10 @@ def open_file():
         log_text_widget.insert("0.0", f"Error opening file: {str(e)}")
 
 
-def filter_content():
+def filter_content(search_filter_entry, log_text_widget):
     filter_text = search_filter_entry.get()
     inclusion_filters = []
     exclusion_filters = []
-
-    # Splitting based on space to get all filters
     filters = filter_text.split()
 
     for f in filters:
@@ -55,9 +90,7 @@ def filter_content():
 
     for row in original_content:
         row_text = ' '.join(map(str, row)).lower() # Convert row data to a single lowercase string for comparison
-        # Apply inclusion filters if specified, else consider the row
         if all(f in row_text for f in inclusion_filters):
-            # Exclude rows that contain any exclusion filter terms
             if not any(f in row_text for f in exclusion_filters):
                 filtered_data.append(row)
 
@@ -69,34 +102,3 @@ def filter_content():
         log_text_widget.insert("0.0", formatted_content)
     else:
         log_text_widget.insert("0.0", "No matches found.")
-
-
-
-# Initialize the main window
-window = ctk.CTk()
-window.title("LogReader by blindoracle")
-window.iconbitmap("eye.ico")
-window.geometry("900x610")
-window.resizable(False, False)
-
-searchbar = ctk.CTkEntry(window, width=500)
-searchbar.grid(row=0, column=0, padx=20, pady=10)
-
-browse_btn = ctk.CTkButton(window, text="Browse Files", command=browse_files)
-browse_btn.grid(row=0, column=1, padx=0, pady=5)
-
-open_btn = ctk.CTkButton(window, text="Open", command=open_file)
-open_btn.grid(row=0, column=2, padx=0, pady=5)
-
-# Replacing the Text widget with CTkTextbox
-log_text_widget = ctk.CTkTextbox(window, width=860, height=510)
-log_text_widget.grid(row=1, column=0, columnspan=3, padx=20, pady=0)
-
-# Adding search filter entry and button at the bottom
-search_filter_entry = ctk.CTkEntry(window, width=150)
-search_filter_entry.grid(row=2, column=1, padx=5, pady=10, sticky='ew')
-
-find_btn = ctk.CTkButton(window, text="Find", command=filter_content, width=150)
-find_btn.grid(row=2, column=2, padx=20, pady=10, sticky='e')
-
-window.mainloop()
