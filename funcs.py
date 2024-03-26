@@ -1,5 +1,5 @@
 import customtkinter as ctk
-from tkinter import filedialog
+from tkinter import filedialog,  messagebox
 import tkinter as tk
 from tabulate import tabulate
 from interface import *
@@ -102,3 +102,89 @@ def filter_content(search_filter_entry, log_text_widget):
         log_text_widget.insert("0.0", formatted_content)
     else:
         log_text_widget.insert("0.0", "No matches found.")
+
+def save_as_file(log_text_widget):
+    # Prompt the user to specify a file name and location
+    filepath = filedialog.asksaveasfilename(defaultextension="txt",
+                                            filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")])
+    if filepath:
+        try:
+            # Read the content from log_text_widget
+            content_to_save = log_text_widget.get("1.0", tk.END)
+            # Write the content to the specified file
+            with open(filepath, 'w') as file:
+                file.write(content_to_save)
+            messagebox.showinfo("Success", "File was saved successfully!")
+        except Exception as e:
+            # If there is any error, show an error message
+            messagebox.showerror("Error", f"Failed to save file: {str(e)}")
+
+
+def filter_query(command, log_text_widget
+                 ):
+    if not command:  # Check if the command is provided
+        log_text_widget.insert(tk.END, "No command provided.")
+        return
+
+    parts = command.lower().split(' mark ')  # Splitting the command on 'mark'
+
+    # Extracting the column from the command (assumes 'from [column]' syntax)
+    from_part = parts[0].split()
+
+    # Explicitly handling the 'ANY' condition
+    if from_part[1] == 'any':
+        column = None
+    else:
+        column_map = {
+            "status": 0,
+            "first date": 1,
+            "second date": 2,
+            "name": 3
+            # 'any' is now explicitly handled above via 'column = None'
+        }
+        column = column_map.get(from_part[1], None)  # Use 'None' to signify 'ANY'
+
+    mark_and_beyond = ' mark '.join(parts[1:]).split(' but ')  # Handling parts after 'mark'
+
+    mark_part = mark_and_beyond[0]  # The criteria to include
+    but_part = mark_and_beyond[1:]  # Handling exclusion or sorting conditions
+
+    exclude = []
+    sort_ascending = None
+
+    # Processing 'but' conditions (exclusion or sorting)
+    if but_part:
+        but_conditions = but_part[0].split()
+        if but_conditions[0] == 'not':
+            exclude = but_conditions[1:]
+        elif but_conditions[0] == 'alph':
+            sort_ascending = True
+        elif but_conditions[0] == 'exalph':
+            sort_ascending = False
+
+    filtered_data = []
+
+    # Filtering the data based on 'mark' and 'but' conditions
+    for row in original_content:
+        include_test = (
+            mark_part.lower() in ' '.join(str(v).lower() for v in row) if column is None else mark_part.lower() in str(
+                row[column]).lower()
+        )
+        exclude_test = not any(ex.lower() in ' '.join(str(v).lower() for v in row) for ex in exclude)
+
+        if include_test and exclude_test:
+            filtered_data.append(row)
+
+    # Sorting the data if required. Note: Sorting 'ANY' is ambiguous and not performed.
+    if sort_ascending is not None and column is not None:
+        filtered_data.sort(key=lambda x: str(x[column]).lower(), reverse=not sort_ascending)
+
+    # Displaying the filtered content in the log_text_widget
+    col_names = ["     Status    ", "          First Date          ", "              Second Date             ",
+                 "         Name        "]
+    log_text_widget.delete("0.0", tk.END)  # Clear previous content
+    if filtered_data:
+        formatted_content = tabulate(filtered_data, headers=col_names, tablefmt="pipes")
+        log_text_widget.insert(tk.END, formatted_content)
+    else:
+        log_text_widget.insert(tk.END, "No matches found.")
