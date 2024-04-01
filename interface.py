@@ -10,7 +10,7 @@ def setup_interface(window):
 
     window = ctk.CTk()
     window.title("LogReader by blindoracle")
-    window.iconbitmap("eye.ico")
+    window.iconbitmap(r'icon.ico')
     window.geometry("900x610")
     window.resizable(False, False)
 
@@ -37,10 +37,10 @@ def setup_interface(window):
     # search_filter_entry now spans the third and fourth columns
     search_filter_entry = ctk.CTkEntry(window, width=150, placeholder_text="'+' to add, '-' to remove")
     search_filter_entry.grid(row=2, column=2, columnspan=2, padx=5, pady=10, sticky='ew')
-    search_filter_entry.bind("<Return>", lambda event: filter_query(search_filter_entry.get(), log_text_widget))
+    search_filter_entry.bind("<Return>", lambda event: filter_content(search_filter_entry, log_text_widget))
 
     # Moved find_btn to column 4 in the third row
-    find_btn = ctk.CTkButton(window, text="Find", command=lambda: filter_query(search_filter_entry.get(), log_text_widget))
+    find_btn = ctk.CTkButton(window, text="Find", command=lambda: filter_content(search_filter_entry, log_text_widget))
     find_btn.grid(row=2, column=4, padx=20, pady=10)
 
     window.mainloop()

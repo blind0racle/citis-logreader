@@ -75,33 +75,56 @@ def open_file(searchbar, log_text_widget):
 
 
 def filter_content(search_filter_entry, log_text_widget):
-    filter_text = search_filter_entry.get()
+    filter_text = search_filter_entry.get().lower()
     inclusion_filters = []
     exclusion_filters = []
+
+    # Commands for sorting-specific fields
+    commands = {
+        "$alphname": (lambda x: x[-1].lower(), False),
+        "$revalphname": (lambda x: x[-1].lower(), True),
+        "$alphfirstdate": (lambda x: x[1].lower(), False),
+        "$revalphfirstdate": (lambda x: x[1].lower(), True),
+        "$alphseconddate": (lambda x: x[2].lower(), False),
+        "$revalphseconddate": (lambda x: x[2].lower(), True),
+    }
+
+    # Determine the sorting key and order
+    sort_key, sort_reverse = None, False
+    for cmd, (key_func, reverse) in commands.items():
+        if cmd in filter_text:
+            sort_key, sort_reverse = key_func, reverse
+            filter_text = filter_text.replace(cmd, "")  # Remove command from filter text
+            break  # Assuming only one sorting command per search
+
     filters = filter_text.split()
 
     for f in filters:
         if f.startswith('+'):
-            inclusion_filters.append(f[1:].lower())  # Include terms without '+'
+            inclusion_filters.append(f[1:])
         elif f.startswith('-'):
-            exclusion_filters.append(f[1:].lower())  # Exclude terms without '-'
+            exclusion_filters.append(f[1:])
 
     filtered_data = []
 
     for row in original_content:
-        row_text = ' '.join(map(str, row)).lower() # Convert row data to a single lowercase string for comparison
-        if all(f in row_text for f in inclusion_filters):
-            if not any(f in row_text for f in exclusion_filters):
-                filtered_data.append(row)
+        row_text = ' '.join(map(str, row)).lower()
+        if all(f in row_text for f in inclusion_filters) and not any(f in row_text for f in exclusion_filters):
+            filtered_data.append(row)
+
+    # Sorting filtered data based on the chosen key and order
+    if sort_key:
+        filtered_data.sort(key=sort_key, reverse=sort_reverse)
 
     # Displaying the filtered content
-    col_names = ["     Status    ", "          First Date          ", "              Second Date             ", "         Name        "]
+    col_names = ["Status", "First Date", "Second Date", "Name"]
     log_text_widget.delete("0.0", tk.END)
     if filtered_data:
         formatted_content = tabulate(filtered_data, headers=col_names, tablefmt="pipes")
         log_text_widget.insert("0.0", formatted_content)
     else:
         log_text_widget.insert("0.0", "No matches found.")
+
 
 def save_as_file(log_text_widget):
     # Prompt the user to specify a file name and location
@@ -126,7 +149,7 @@ def filter_query(command, log_text_widget
         log_text_widget.insert(tk.END, "No command provided.")
         return
 
-    parts = command.lower().split(' mark ')  # Splitting the command on 'mark'
+    parts = command.lower().split(' select ')  # Splitting the command on 'mark'
 
     # Extracting the column from the command (assumes 'from [column]' syntax)
     from_part = parts[0].split()
@@ -144,7 +167,7 @@ def filter_query(command, log_text_widget
         }
         column = column_map.get(from_part[1], None)  # Use 'None' to signify 'ANY'
 
-    mark_and_beyond = ' mark '.join(parts[1:]).split(' but ')  # Handling parts after 'mark'
+    mark_and_beyond = ' select '.join(parts[1:]).split(' where ')  # Handling parts after 'mark'
 
     mark_part = mark_and_beyond[0]  # The criteria to include
     but_part = mark_and_beyond[1:]  # Handling exclusion or sorting conditions
@@ -159,7 +182,7 @@ def filter_query(command, log_text_widget
             exclude = but_conditions[1:]
         elif but_conditions[0] == 'alph':
             sort_ascending = True
-        elif but_conditions[0] == 'exalph':
+        elif but_conditions[0] == 'revalph':
             sort_ascending = False
 
     filtered_data = []
